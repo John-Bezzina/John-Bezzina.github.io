@@ -1,0 +1,45 @@
+
+/*navbar text size and spacing*/
+header nav div div li {
+    font-size: 40px;
+    line-height: 80px;
+}
+
+/*navbar hover effect*/
+header nav div div li:hover{
+  background-color: #F9AD4B;
+  height: fit-content;
+}
+
+/* icon size*/
+header nav div div form button img{
+    height: 30px;
+}
+
+/*footer text to remove link colour*/
+footer nav ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* just used this to remove the bullets in the footer*/
+footer nav ul{
+    list-style: none;
+    margin-top: 20px;
+}
+
+/*footer margin spacing */
+footer{
+    display: flex;
+}
+
+/*footer text changes when hovering*/
+footer nav ul li a:hover{
+    color: #ffffff;
+}
+
+/*to keep the same size cards for products*/
+.card-group{
+    width: 30cm;
+}

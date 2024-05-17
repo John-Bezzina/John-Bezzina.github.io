@@ -1,0 +1,7 @@
+
+
+
+(1) insert array system to hold clients orders and redisplay on the shopping cart page as part of reciept
+(2) create id system for the array which should also help in displaying proper items in products page when filtering
+(3) add border holding all desired products in shoppingcart page
+
