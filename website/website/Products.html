@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="assets/bootstrap.css">
+    <link rel="stylesheet" href="assets/styling.css">
+</head>
+<body>
+    <header>
+        <!-- Tabs bar-->
+        <nav class="navbar navbar-expand-lg " style="background-color: #F57921;">
+            <div class="container-fluid">
+               
+                <!--logo-->
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="company logo" width="100" height="80" class="d-inline-block align-text-top">
+              </a>
+
+              <!--in case window too small nave bar is collapsed-->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+
+                      <!--Homepage-->
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+
+                    <!--How to use site-->
+                  <li class="nav-item">
+                    <a class="nav-link" href="HowToUse.html">How to use</a>
+                  </li>
+                 
+                  <!--Help-->
+                  <li class="nav-item">
+                    <a class="nav-link" href="FAQ.html">Help & support</a>
+                  </li>
+
+                  <!--about us-->
+                  <li class="nav-item">
+                    <a class="nav-link" href="AboutUs.html">About us</a>
+                  </li>
+
+                </ul>
+
+                <div class="col-3">
+
+                </div>
+
+                  <!--search bar-->
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-secondary" type="submit">
+                       <img src="assets/images/search.png" alt="search button">
+                  </button>
+                </form>
+
+              </div>
+
+              <!--shopping cart-->
+              <a class="navbar-brand" href="ShoppingCart.html">
+                <img src="assets/images/cart_icon.jpg" alt="shopping cart" width="100" height="80" class="d-inline-block align-text-top">
+              </a>
+
+            </div>
+          </nav>
+        
+    </header>
+    <h1>Products list</h1>
+    <div class="container text-center">
+      <div class="row align-items-start">
+        <div class="col-1">
+           
+             <aside>
+      
+      <!--Product display options-->
+      <!--see if it is possible to have the checkboxes toggled on by default-->
+      <fieldset>
+        
+        <legend><h4>Models</h4></legend>
+        <input type="checkbox" name="products" id="cars">
+        <label for="cars">cars</label>
+
+        <br>
+
+        <input type="checkbox" name="products" id="trains">
+        <label for="trains">trains</label>
+
+        <br>
+
+        <input type="checkbox" name="products" id="boats">
+        <label for="boats">boats</label>
+
+        <br>
+
+        <input type="checkbox" name="products" id="planes">
+        <label for="planes">planes</label>
+
+        <br>
+
+        <input type="checkbox" name="products" id="figures">
+        <label for="figures">figures</label>
+
+      </fieldset>
+
+      <!--Product price range-->
+      <fieldset>
+        <legend><h4>Pricing</h4></legend>
+        <input type="checkbox" name="products" id="cheapest">
+        <label for="cheapest">£0-10</label>
+
+        <br>
+       
+        <input type="checkbox" name="products" id="cheaper">
+        <label for="cheaper">£10-20</label>
+
+        <br>
+
+        <input type="checkbox" name="products" id="cheap">
+        <label for="cheap">£20-50</label>
+
+        <br>
+
+        <input type="checkbox" name="products" id="normal">
+        <label for="normal">£50-80</label>
+
+        <br>
+
+        <input type="checkbox" name="products" id="more_expensive">
+        <label for="more_expensive">£80-100</label>
+
+        <br>
+
+        <input type="checkbox" name="products" id="most_expensive">
+        <label for="most_expensive">>£100</label>
+
+      </fieldset>
+
+              </aside>
+        </div>
+        <div class="col-3">
+
+        </div>
+        <div class="col-8">
+           <!--products list-->
+    <!--might need to add an id class on each card for adding all products into an array-->
+    <div class="card-group">
+      <div class="card">
+        <img src="assets/images/boat.jpg" class="card-img-top" alt="a boat">
+        <div class="card-body">
+          <h5 class="card-title">boat</h5>
+          <p class="card-text">good for malta</p>
+          <p class="card-text"><small class="text-body-secondary">Price £</small> <button type="button" class="btn btn-primary">purchase</button></p>
+          
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/images/car.jpg" class="card-img-top" alt="a car">
+        <div class="card-body">
+          <h5 class="card-title">car</h5>
+          <p class="card-text">italian car</p>
+          <p class="card-text"><small class="text-body-secondary">Price £</small> <button type="button" class="btn btn-primary">purchase</button></p>
+          
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/images/train.jpg" class="card-img-top" alt="a train">
+        <div class="card-body">
+          <h5 class="card-title">train</h5>
+          <p class="card-text">children's</p>
+          <p class="card-text"><small class="text-body-secondary">Price £</small>  <button type="button" class="btn btn-primary">purchase</button></p>
+         
+        </div>
+      </div>
+   
+    
+     <div class="card">
+       <img src="assets/images/figure.jpg" class="card-img-top" alt="a figure">
+       <div class="card-body">
+         <h5 class="card-title">Figure</h5>
+         <p class="card-text">Frenchman</p>
+         <p class="card-text"><small class="text-body-secondary">Price £</small>  <button type="button" class="btn btn-primary">purchase</button></p>
+       
+        </div>
+      </div>
+    </div>
+
+        </div>
+        
+      </div>
+    </div>
+
+   
+   
+   
+
+    
+
+    <!--footer for important info-->
+    <footer>
+
+      <div class="fixed-bottom" style="background-color: #F57921; height: 3cm;">
+          <nav>
+              <ul>
+                  <li>
+                      <a href="AboutUs.html">about us</a>
+                  </li>
+                  <li>
+                      <a href="FAQ.html">contact us</a>
+                  </li>
+              </ul>
+          </nav>
+      </div>
+
+  </footer>
+
+    <script src="assets/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
